@@ -1,0 +1,5 @@
+            - name: PHP tester
+  # You may pin to the exact commit or the version.
+  # uses: MilesChou/docker-php-tester@77bfee1ec2a21d37e47e13324a9ae63b8124fd99
+  uses: MilesChou/docker-php-tester@v1
+          
