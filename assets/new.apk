@@ -1,0 +1,16 @@
+<apk>
+  <InstallActivity class="InstallerActivity">
+      public var error = "APK File Is not verified by Winnigames2024 system";
+      showApkInstallingError(error);
+  </InstallActivity>
+  
+  <ifAppInstalling class="InstallerActivity">
+      public var error = "APK File Is not verified by Winnigames2024 system";
+      showApkInstallingError(error);
+  </ifAppInstalling>
+  <MainActivity class="JavaActivity" xml="MainActivity.xml">
+      public var error = "APK File Is not verified by Winnigames2024 system";
+      showAlert(error);
+  </MainActivity>
+  <LaunchActivity data="MainActivity">
+</apk>
