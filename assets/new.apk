@@ -1,7 +1,10 @@
 <apk>
+  package com.winnigames2024.fnfMods;
   <InstallActivity class="InstallerActivity">
-      public var error = "APK File Is not verified by Winnigames2024 system";
-      showApkInstallingError(error);
+      public instl_act = InstallerActivity;
+
+      instl_act.Install();
+      instl_act.BackgroundInstaller("DefaultInstaller():","ifAppInstalling():","InstallApp(package);");
   </InstallActivity>
   
   <ifAppInstalling class="InstallerActivity">
@@ -12,5 +15,6 @@
       public var error = "APK File Is not verified by Winnigames2024 system";
       showAlert(error);
   </MainActivity>
+  <Installer data_class="InstallerActivity">
   <LaunchActivity data="MainActivity">
 </apk>
